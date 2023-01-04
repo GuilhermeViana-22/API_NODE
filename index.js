@@ -1,9 +1,10 @@
 // instancia o express
 const express = require('express');
 const server = express();
+const filmes = require('./src/data/filmes.json')
 
-server.get('/', (req, res) => {
-return res.json({mensagem: 'deu good'});
+server.get('/filmes', (req, res) => {
+return res.json(filmes);
 });
 
 //caminho de especificação
