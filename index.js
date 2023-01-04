@@ -4,6 +4,7 @@ const server = express();
 const filmes = require('./src/data/filmes.json')
 
 server.get('/filmes', (req, res) => {
+//retorna o json de filmes
 return res.json(filmes);
 });
 
